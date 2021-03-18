@@ -6,13 +6,17 @@
         "ng": "ng",
         "start": "ng serve --open",
         "start:mem": "node --max_old_space_size=6144 ./node_modules/@angular/cli/bin/ng serve --open",
-        "build": "ng build",
+        "build": "ng build --prod",
         "build:prod": "ng build --prod",
         "build:prod:mem": "node --max_old_space_size=6144 ./node_modules/@angular/cli/bin/ng build --prod",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
         "bundle-report": "webpack-bundle-analyzer dist/stats.json"
+    },
+    "engines": {
+        "node": "14.15.5",
+        "npm": "6.14.11"
     },
     "private": true,
     "dependencies": {
@@ -45,6 +49,7 @@
         "classlist.js": "1.1.20150312",
         "d3": "5.16.0",
         "date-fns": "2.15.0",
+        "express": "4.17.1",
         "lodash": "4.17.19",
         "moment": "2.27.0",
         "ng2-charts": "2.3.2",
